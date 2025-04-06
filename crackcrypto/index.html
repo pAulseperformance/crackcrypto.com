@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrackCrypto | Premium Crypto Trading Course</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Primary Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Secondary Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+
+
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .course-card {
+            transition: all 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, rgba(124, 58, 237, 0.6), rgba(30, 58, 138, 0.6));
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: 0;
+        }
+        .blob-1 {
+            top: -100px;
+            left: -100px;
+        }
+        .blob-2 {
+            bottom: -100px;
+            right: -100px;
+        }
+        .animate-pulse-slow {
+            animation: pulse 6s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.4;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-bitcoin text-purple-500 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold">Crack<span class="text-purple-500">Crypto</span></span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-purple-400 transition">Home</a>
+                    <a href="#course" class="hover:text-purple-400 transition">Course</a>
+                    <a href="#features" class="hover:text-purple-400 transition">Features</a>
+                    <a href="#testimonials" class="hover:text-purple-400 transition">Results</a>
+                    <a href="#pricing" class="hover:text-purple-400 transition">Pricing</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button class="px-4 py-2 rounded-md bg-purple-600 hover:bg-purple-700 transition">Login</button>
+                    <button class="md:hidden text-xl" id="mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-gray-800 w-full py-4" id="mobile-menu">
+            <div class="container mx-auto px-4 flex flex-col space-y-3">
+                <a href="#home" class="hover:text-purple-400 transition py-2">Home</a>
+                <a href="#course" class="hover:text-purple-400 transition py-2">Course</a>
+                <a href="#features" class="hover:text-purple-400 transition py-2">Features</a>
+                <a href="#testimonials" class="hover:text-purple-400 transition py-2">Results</a>
+                <a href="#pricing" class="hover:text-purple-400 transition py-2">Pricing</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient relative overflow-hidden py-20">
+        <div class="blob blob-1 animate-pulse-slow"></div>
+        <div class="blob blob-2 animate-pulse-slow"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Master Crypto Trading With Our <span class="text-purple-300">Proven System</span></h1>
+                    <p class="text-xl text-gray-300 mb-8">Our comprehensive course teaches you exactly how to profit from cryptocurrency markets, whether you're a complete beginner or experienced trader.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-md font-semibold transition">Enroll Now</button>
+                        <button class="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-md font-semibold transition">Watch Free Lesson</button>
+                    </div>
+                    <div class="mt-8 flex items-center">
+                        <div class="flex -space-x-2">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-purple-500" alt="Student">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-purple-500" alt="Student">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-purple-500" alt="Student">
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm text-gray-300">Join <span class="font-bold text-purple-300">5,000+</span> students who transformed their trading</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-lg">
+                        <div class="relative bg-gray-800 rounded-xl p-4 shadow-2xl border border-gray-700">
+                            <div class="flex items-center mb-4">
+                                <div class="flex space-x-2">
+                                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <div class="ml-4 text-sm text-gray-400">CrackCrypto Dashboard</div>
+                            </div>
+                            <div class="bg-gray-900 rounded-lg p-2 border border-gray-700">
+                                <div class="h-64 bg-gradient-to-b from-gray-800 to-gray-900 rounded-lg flex items-center justify-center relative overflow-hidden">
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <div class="w-full h-full bg-gradient-to-r from-purple-900/20 to-blue-900/20 animate-pulse"></div>
+                                    </div>
+                                    <div class="text-center relative z-10">
+                                        <i class="fas fa-chart-line text-5xl text-purple-500 mb-4 animate-bounce"></i>
+                                        <p class="text-xl font-bold mb-2">+247% ROI</p>
+                                        <p class="text-gray-400">Last 6 months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+                                <div class="bg-gray-900 p-2 rounded-lg">
+                                    <p class="text-sm text-gray-400">Win Rate</p>
+                                    <p class="text-lg font-bold text-green-400">82%</p>
+                                </div>
+                                <div class="bg-gray-900 p-2 rounded-lg">
+                                    <p class="text-sm text-gray-400">Avg. Trade</p>
+                                    <p class="text-lg font-bold text-purple-400">+3.2%</p>
+                                </div>
+                                <div class="bg-gray-900 p-2 rounded-lg">
+                                    <p class="text-sm text-gray-400">Risk/Reward</p>
+                                    <p class="text-lg font-bold text-blue-400">1:3.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-12 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <p class="text-gray-400 mb-4">TRUSTED BY TRADERS AT</p>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://via.placeholder.com/120x40/1e293b/7c3aed?text=Binance" class="h-8 opacity-70 hover:opacity-100 transition" alt="Binance">
+                <img src="https://via.placeholder.com/120x40/1e293b/7c3aed?text=Coinbase" class="h-8 opacity-70 hover:opacity-100 transition" alt="Coinbase">
+                <img src="https://via.placeholder.com/120x40/1e293b/7c3aed?text=Kraken" class="h-8 opacity-70 hover:opacity-100 transition" alt="Kraken">
+                <img src="https://via.placeholder.com/120x40/1e293b/7c3aed?text=Bybit" class="h-8 opacity-70 hover:opacity-100 transition" alt="Bybit">
+                <img src="https://via.placeholder.com/120x40/1e293b/7c3aed?text=FTX" class="h-8 opacity-70 hover:opacity-100 transition" alt="FTX">
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section id="course" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">The <span class="text-purple-500">CrackCrypto</span> Trading Course</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">A comprehensive program designed to take you from crypto novice to profitable trader</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Module 1 -->
+                <div class="course-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-blue-900 to-purple-900 flex items-center justify-center">
+                        <i class="fas fa-university text-6xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full mr-3">Module 1</span>
+                            <h3 class="text-xl font-bold">Crypto Fundamentals</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Understand blockchain technology, how cryptocurrencies work, and the key factors that drive market movements.</p>
+                        <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-400 mr-2"></i>
+                                <span>6 Video Lessons</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-400 mr-2"></i>
+                                <span>Market Psychology</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-400 mr-2"></i>
+                                <span>Exchange Guide</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-700">
+                            <span class="text-sm text-gray-400">2.5 Hours</span>
+                            <button class="text-purple-400 hover:text-purple-300 text-sm font-semibold">Preview Lesson <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Module 2 -->
+                <div class="course-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-purple-900 to-purple-800 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-6xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-900 text-purple-300 text-xs px-3 py-1 rounded-full mr-3">Module 2</span>
+                            <h3 class="text-xl font-bold">Technical Analysis</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Master chart patterns, indicators, and our proprietary trading framework for identifying high-probability setups.</p>
+                        <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-400 mr-2"></i>
+                                <span>8 Video Lessons</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-400 mr-2"></i>
+                                <span>Indicator Secrets</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-400 mr-2"></i>
+                                <span>Price Action</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-700">
+                            <span class="text-sm text-gray-400">4 Hours</span>
+                            <button class="text-purple-400 hover:text-purple-300 text-sm font-semibold">Preview Lesson <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Module 3 -->
+                <div class="course-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-purple-800 to-pink-800 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-pink-900 text-pink-300 text-xs px-3 py-1 rounded-full mr-3">Module 3</span>
+                            <h3 class="text-xl font-bold">Advanced Strategies</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Learn our institutional-grade trading strategies including algorithmic approaches and risk management systems.</p>
+                        <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-pink-400 mr-2"></i>
+                                <span>10 Video Lessons</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-pink-400 mr-2"></i>
+                                <span>Bot Trading</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-pink-400 mr-2"></i>
+                                <span>Backtesting</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-700">
+                            <span class="text-sm text-gray-400">6 Hours</span>
+                            <button class="text-purple-400 hover:text-purple-300 text-sm font-semibold">Preview Lesson <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-md font-semibold transition">See Full Curriculum (24 Modules)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Why Our Course Works</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">We've helped thousands of students achieve consistent profits in crypto markets</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-700 rounded-xl p-8 transition border border-gray-600">
+                    <div class="w-16 h-16 bg-purple-900/30 rounded-lg flex items-center justify-center mb-6 text-purple-400 text-2xl">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Step-by-Step Learning</h3>
+                    <p class="text-gray-300">Our curriculum is designed to take you from absolute beginner to advanced trader with clear, actionable lessons.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-700 rounded-xl p-8 transition border border-gray-600">
+                    <div class="w-16 h-16 bg-blue-900/30 rounded-lg flex items-center justify-center mb-6 text-blue-400 text-2xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Real Trading Examples</h3>
+                    <p class="text-gray-300">Every concept is demonstrated with actual trades from crypto markets, not just theory.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-700 rounded-xl p-8 transition border border-gray-600">
+                    <div class="w-16 h-16 bg-green-900/30 rounded-lg flex items-center justify-center mb-6 text-green-400 text-2xl">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proprietary Tools</h3>
+                    <p class="text-gray-300">Get access to our exclusive trading indicators, scanners, and risk calculators.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-700 rounded-xl p-8 transition border border-gray-600">
+                    <div class="w-16 h-16 bg-yellow-900/30 rounded-lg flex items-center justify-center mb-6 text-yellow-400 text-2xl">
+                        <i class="fas fa-comments-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Live Trading Sessions</h3>
+                    <p class="text-gray-300">Weekly live streams where we analyze markets and place real trades together.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-700 rounded-xl p-8 transition border border-gray-600">
+                    <div class="w-16 h-16 bg-red-900/30 rounded-lg flex items-center justify-center mb-6 text-red-400 text-2xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Private Community</h3>
+                    <p class="text-gray-300">Connect with thousands of like-minded traders in our exclusive Discord community.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-700 rounded-xl p-8 transition border border-gray-600">
+                    <div class="w-16 h-16 bg-pink-900/30 rounded-lg flex items-center justify-center mb-6 text-pink-400 text-2xl">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1-on-1 Coaching</h3>
+                    <p class="text-gray-300">Premium students get direct access to our team of professional traders for personalized guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Results -->
+    <section id="testimonials" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Real Student Results</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Don't take our word for it - see what our students have achieved</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-xl p-8 border border-gray-700">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" class="w-14 h-14 rounded-full border-2 border-purple-500 mr-4" alt="Student">
+                        <div>
+                            <h4 class="font-bold">Jessica R.</h4>
+                            <p class="text-sm text-gray-400">Former Nurse, Now Full-Time Trader</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"I went from knowing nothing about crypto to making $8,000 in my first month. The step-by-step approach made complex concepts easy to understand."</p>
+                    <div class="flex items-center">
+                        <div class="flex mr-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <div class="bg-green-900/30 text-green-400 text-xs px-3 py-1 rounded-full">
+                            +$127K Profit
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-xl p-8 border border-gray-700">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-14 h-14 rounded-full border-2 border-purple-500 mr-4" alt="Student">
+                        <div>
+                            <h4 class="font-bold">Michael T.</h4>
+                            <p class="text-sm text-gray-400">Software Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The algorithmic trading module completely changed my approach. I've automated my strategy and now earn consistent profits while I sleep."</p>
+                    <div class="flex items-center">
+                        <div class="flex mr-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <div class="bg-green-900/30 text-green-400 text-xs px-3 py-1 rounded-full">
+                            +$89K Profit
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-xl p-8 border border-gray-700">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" class="w-14 h-14 rounded-full border-2 border-purple-500 mr-4" alt="Student">
+                        <div>
+                            <h4 class="font-bold">Sarah L.</h4>
+                            <p class="text-sm text-gray-400">College Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Started with just $500 and grew it to $15,000 in 6 months. The risk management lessons saved me from huge losses multiple times."</p>
+                    <div class="flex items-center">
+                        <div class="flex mr-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star-half-alt text-yellow-400"></i>
+                        </div>
+                        <div class="bg-green-900/30 text-green-400 text-xs px-3 py-1 rounded-full">
+                            +$14.5K Profit
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700">
+                    <p class="text-3xl font-bold text-purple-400 mb-2">5,000+</p>
+                    <p class="text-gray-400">Students Enrolled</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700">
+                    <p class="text-3xl font-bold text-blue-400 mb-2">92%</p>
+                    <p class="text-gray-400">Success Rate</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700">
+                    <p class="text-3xl font-bold text-green-400 mb-2">$12M+</p>
+                    <p class="text-gray-400">Total Profits</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700">
+                    <p class="text-3xl font-bold text-yellow-400 mb-2">4.9/5</p>
+                    <p class="text-gray-400">Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Choose Your Plan</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Invest in your financial education today for a lifetime of trading success</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-gray-700 rounded-xl p-8 border border-gray-600">
+                    <h3 class="text-xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-400 mb-6">For beginners who want to learn the basics</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold">$297</span>
+                        <span class="text-gray-400">/one-time</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Core Curriculum (12 Modules)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Basic Trading Tools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Community Access</span>
+                        </li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fas fa-times text-gray-600 mr-3"></i>
+                            <span>Live Trading Sessions</span>
+                        </li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fas fa-times text-gray-600 mr-3"></i>
+                            <span>Advanced Strategies</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-600 hover:bg-gray-500 rounded-md font-semibold transition">Get Started</button>
+                </div>
+                
+                <!-- Popular Plan -->
+                <div class="bg-purple-900 rounded-xl p-8 relative border border-purple-700">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-yellow-900 text-xs font-bold px-4 py-1 rounded-bl-lg rounded-tr-lg">MOST POPULAR</div>
+                    <h3 class="text-xl font-bold mb-2">Professional</h3>
+                    <p class="text-purple-300 mb-6">For serious traders who want full access</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold">$997</span>
+                        <span class="text-purple-300">/one-time</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Full Curriculum (24 Modules)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>All Trading Tools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Premium Community</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Weekly Live Sessions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Advanced Strategies</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-purple-600 hover:bg-purple-500 rounded-md font-semibold transition">Get Started</button>
+                </div>
+                
+                <!-- VIP Plan -->
+                <div class="bg-gray-700 rounded-xl p-8 border border-gray-600">
+                    <h3 class="text-xl font-bold mb-2">VIP Mentorship</h3>
+                    <p class="text-gray-400 mb-6">For those who want personalized coaching</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold">$2,997</span>
+                        <span class="text-gray-400">/one-time</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Everything in Professional</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>1-on-1 Coaching Sessions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Portfolio Review</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Custom Strategy Development</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Lifetime Updates</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-600 hover:bg-gray-500 rounded-md font-semibold transition">Get Started</button>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gray-700 rounded-xl p-8 border border-purple-900/50 max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold mb-4 text-center">30-Day Money Back Guarantee</h3>
+                <p class="text-gray-300 text-center">We're so confident you'll love our course that we offer a full refund within 30 days if you're not completely satisfied. No questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Everything you need to know about the CrackCrypto trading course</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <button class="flex justify-between items-center w-full text-left faq-toggle">
+                        <h3 class="text-lg font-semibold">Do I need any prior trading experience?</h3>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-300">No prior experience is needed! Our course is designed to take you from absolute beginner to advanced trader. We start with the fundamentals and gradually build up to more complex concepts.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <button class="flex justify-between items-center w-full text-left faq-toggle">
+                        <h3 class="text-lg font-semibold">How much time do I need to commit?</h3>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-300">The core curriculum takes about 30 hours to complete. Most students spend 2-3 hours per week and start seeing results within the first month. You can go at your own pace - the course materials are available forever.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <button class="flex justify-between items-center w-full text-left faq-toggle">
+                        <h3 class="text-lg font-semibold">What's the difference between the plans?</h3>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-300">The Starter plan includes our core curriculum covering fundamentals and basic strategies. The Professional plan adds advanced modules, live sessions, and premium tools. VIP includes everything plus personalized coaching from our team.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <button class="flex justify-between items-center w-full text-left faq-toggle">
+                        <h3 class="text-lg font-semibold">Can I really make money with this?</h3>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-300">While we can't guarantee profits (no one can in trading), our students have collectively made millions using our strategies. Your results will depend on your dedication, risk management, and market conditions. We teach you a professional approach to trading that gives you the best possible edge.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <button class="flex justify-between items-center w-full text-left faq-toggle">
+                        <h3 class="text-lg font-semibold">What if I get stuck or have questions?</h3>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-300">Our private Discord community is extremely active with thousands of students helping each other. Our team also monitors the community daily to answer questions. VIP students get direct access to our coaches for personalized help.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-300 mb-6">Still have questions? We're happy to help!</p>
+                <button class="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-md font-semibold transition">Contact Our Team</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="hero-gradient py-20 relative overflow-hidden">
+        <div class="blob blob-1 animate-pulse-slow"></div>
+        <div class="blob blob-2 animate-pulse-slow"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Your Crypto Trading Journey Today</h2>
+                <p class="text-xl text-gray-300 mb-8">Join thousands of students who transformed their financial future with our proven trading system.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="px-8 py-3 bg-white text-purple-900 hover:bg-gray-100 rounded-md font-semibold transition">Enroll Now</button>
+                    <button class="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-purple-900 rounded-md font-semibold transition">Free Beginner's Guide</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 pt-20 pb-10 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-bitcoin text-purple-500 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Crack<span class="text-purple-500">Crypto</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">The most comprehensive crypto trading education available.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Course</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Curriculum</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Free Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Refund Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2023 CrackCrypto.com. All rights reserved.</p>
+                <p class="mt-2">Disclaimer: Trading cryptocurrencies involves substantial risk of loss and is not suitable for every investor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
