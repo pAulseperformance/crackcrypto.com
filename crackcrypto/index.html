@@ -87,6 +87,11 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
         }
     </style>
+    <!-- The page's own view counter, served first-party from zpe.vc/analytics and cross-origin here. The id is
+         this site's row in the zpe-stats store (crackcrypto.com); the beacon derives its collect URL from the
+         src, so moving the app's mount needs no edit on this page. NO integrity hash on purpose: this is our
+         own file, and pinning a hash would silently stop the count the next time the app redeploys the tracker. -->
+    <script id="zpe-stats-tracker" src="https://zpe.vc/analytics/tracker.js" data-stats-site="5f2f0febdf46" defer></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Header/Navigation -->
